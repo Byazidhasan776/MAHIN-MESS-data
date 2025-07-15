@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WELCOME <br> MAHIN MESS</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+</head>
+<body>
+  <div class="header" onclick="adminTap()">
+    <h1 id="main-heading">WELCOME <br> MAHIN MESS</h1>
+  </div>
+
+  <div id="admin-panel" style="display: none;">
+    <p class="admin-greet">আসসালামু আলাইকুম ADMIN Sir. Admin Mode Active</p>
+    <input type="password" placeholder="Admin Password" id="admin-pass">
+    <button onclick="enableAdmin()">Login</button>
+  </div>
+
+  <div id="members-section"></div>
+
+  <div id="notice-section">
+    <h2 class="notice-title">NOTICE</h2>
+    <textarea id="notice-text" placeholder="Notice..." readonly></textarea>
+  </div>
+
+  <div id="message-section">
+    <h2 style="color: yellow;">MESSAGE</h2>
+    <textarea id="message-box" placeholder="Only Admin Can Write" readonly></textarea>
+  </div>
+
+  <div class="footer">made by BYAZID</div>
+  <script src="script.js"></script>
+</body>
+</html>
